@@ -1,0 +1,36 @@
+{
+    "name":"asconsulting/contao_skeleton",
+    "description":"Skeleton module for Contao Open Source CMS",
+    "homepage": "https://andrewstevens.consulting",
+    "keywords":["contao", "skeleton"],
+    "type":"contao-module",
+    "license":"LGPL-3.0-or-later",
+    "authors":[
+        {
+            "name":"Andrew Stevens",
+            "homepage":"https://andrewstevens.consulting"
+        }
+    ],
+    "require":{
+        "php": "~5.4 || ~7.0",
+        "contao/core-bundle": "^3.5.2 || ~4.4"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Asc\\": [
+                "system/modules/contao_skeleton/library"
+            ]
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "system/modules/contao_skeleton": "system/modules/contao_skeleton"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
